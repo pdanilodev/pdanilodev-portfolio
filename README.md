@@ -1,130 +1,83 @@
-# pdanilodev-portfolio
-Portfólio minimalista de desenvolvedor criado com TanStack Start, React, TypeScript, Vite e TailwindCSS.
-
 # Pablo Danilo — Portfolio
 
-Portfólio minimalista e moderno desenvolvido com foco em:
-- performance
-- tipografia
-- experiência imersiva
-- animações suaves
-- arquitetura limpa
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![TanStack Start](https://img.shields.io/badge/TanStack_Start-FF4154?logo=react-query&logoColor=white)](https://tanstack.com/start)
+[![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=white)](https://vite.dev)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 
----
+Portfólio pessoal — minimalista, multilíngue (PT/EN), com dark/light mode e foco em tipografia, performance e acessibilidade.
 
-## Stack
+## ✨ Features
 
-- TanStack Start
-- React
-- TypeScript
-- Vite
-- TailwindCSS
-- Framer Motion
+- 🌓 **Dark / Light mode** com persistência em `localStorage`
+- 🌍 **Multilíngue** (PT-BR / EN) com troca instantânea
+- 📱 **Totalmente responsivo** (mobile, tablet, desktop)
+- ⚡ **Performance-first** — imagens otimizadas, lazy loading
+- ♿ **Acessível** — semântica HTML, `aria-label`, contraste WCAG
+- 🎨 **Design system** com tokens em `oklch` no `src/styles.css`
 
----
+## 🛠 Stack
 
-## Funcionalidades
+- **React 19** + **TypeScript**
+- **TanStack Start** (SSR/SSG + file-based routing)
+- **Vite 7** (build tool)
+- **Tailwind CSS 4**
+- **Lucide** + **React Icons** (iconografia)
 
-- Interface dark minimalista
-- Totalmente responsivo
-- Animações suaves
-- Seção de projetos
-- Exibição de stacks
-- SEO otimizado
-- Arquitetura escalável
-- Alta performance
+## 🚀 Como rodar localmente
 
----
-
-## Preview
-
-![preview](./public/preview.png)
-
----
-
-## Instalação
-
-Clone o projeto:
+Pré-requisitos: [Bun](https://bun.sh) (recomendado) ou Node.js 20+.
 
 ```bash
-git clone https://github.com/SEU-USUARIO/everton-portfolio.git
+# 1. Clonar o repositório
+git clone https://github.com/pdanilodev/pdanilodev-portfolio.git
+cd pdanilodev-portfolio
+
+# 2. Instalar dependências
+bun install
+# ou: npm install
+
+# 3. Rodar em modo desenvolvimento
+bun dev
+# ou: npm run dev
 ```
 
-Entre na pasta:
+O projeto abre em `http://localhost:5173`.
 
-```bash
-cd everton-portfolio
+## 📦 Scripts
+
+| Comando | O que faz |
+|---|---|
+| `bun dev` | Servidor de desenvolvimento com HMR |
+| `bun run build` | Build de produção |
+| `bun run preview` | Preview do build de produção |
+| `bun run lint` | Roda o ESLint |
+| `bun run format` | Formata com Prettier |
+
+## 📁 Estrutura
+
 ```
-
-Instale as dependências:
-
-```bash
-npm install
-```
-
-Inicie o projeto:
-
-```bash
-npm run dev
-```
-
----
-
-## Build de Produção
-
-```bash
-npm run build
-```
-
----
-
-## Estrutura do Projeto
-
-```bash
 src/
-├── assets/
-├── components/
-├── sections/
-├── layouts/
-├── hooks/
-├── routes/
-├── lib/
-├── styles/
-└── types/
+├── assets/          # Imagens (avatar, fotos de robótica)
+├── components/ui/   # Componentes shadcn/ui
+├── routes/          # Rotas (file-based routing)
+│   ├── __root.tsx   # Layout raiz
+│   └── index.tsx    # Home (portfólio)
+├── styles.css       # Design tokens + Tailwind
+└── router.tsx       # Config do router
 ```
 
----
+## 🌐 Deploy
 
-## Filosofia do Projeto
+O projeto é compatível com **Cloudflare Workers** (via `wrangler.jsonc`), **Vercel**, **Netlify** e qualquer host que suporte Node.js/SSR.
 
-Este projeto foi desenvolvido para transmitir:
-- minimalismo
-- sofisticação
-- clareza visual
-- foco em tipografia
-- experiência fluida
+## 📫 Contato
 
-Inspirado em interfaces editoriais modernas e portfólios premium.
+- **Email:** pablodanilo2007@gmail.com
+- **GitHub:** [@pdanilodev](https://github.com/pdanilodev)
+- **LinkedIn:** [pdanilodev](https://www.linkedin.com/in/pdanilodev/)
 
 ---
 
-## Performance
-
-Projeto otimizado visando:
-- Performance
-- Acessibilidade
-- SEO
-- Boas práticas
-
----
-
-## Contato
-
-- GitHub: https://github.com/pdanilodev
-- LinkedIn: https://linkedin.com/in/pdanilodev
-
----
-
-## Licença
-
-MIT
+© 2026 Pablo Danilo · Feito com cuidado.
