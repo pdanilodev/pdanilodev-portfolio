@@ -80,4 +80,4 @@ O projeto é compatível com **Cloudflare Workers** (via `wrangler.jsonc`), **Ve
 
 ---
 
-© 2026 Pablo Danilo · Feito com cuidado.
+© 2026 Pablo Danilo · Feito com cuidado e profissionalismo.
